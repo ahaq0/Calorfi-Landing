@@ -7,23 +7,23 @@ const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
-        <span>Features</span>
+        <span>Train</span>
         <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
+          <li>How does it work?</li>
+          <li>FAQ</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>Resources</span>
+        <span>Teach</span>
         <ul>
-          <li>Compare</li>
-          <li>Blog</li>
+          <li>How does it work?</li>
+          <li>FAQ</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>Company</span>
+        <span>Earn</span>
         <ul>
-          <li>About Us</li>
+          <li>Becoming a partner</li>
           <li>Careers</li>
         </ul>
       </FooterColumn>
@@ -36,7 +36,7 @@ const Footer = () => (
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>CalorFi</Logo>
     </BrandContainer>
   </FooterWrapper>
 )

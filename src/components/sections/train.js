@@ -3,53 +3,52 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
-const Features = () => (
-  <Section id="features">
+const Train = () => (
+  <Section id="Train">
     <StyledContainer>
-      <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
-      <FeaturesGrid>
+      <Subtitle>Train</Subtitle>
+      <SectionTitle>Get Fit Fast</SectionTitle>
+      <TrainGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>See results sooner</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            Do Exercises the right way taught by a professional.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Save</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Why pay for $50 an hour for a personal trainer that needs a personal trainer?
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Stay accountable</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Build goals and a schedule that you'll stick with.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>Build life long habits</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
+            Reevaluate how you view health and fitness with a holistic trainer.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
+          <FeatureText>Purchase training sessions and packages with 1 click of a button.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Rewards</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+            Like being healthy? Get rewarded.
           </FeatureText>
         </FeatureItem>
-      </FeaturesGrid>
+      </TrainGrid>
     </StyledContainer>
   </Section>
 )
 
-export default Features
+export default Train
 
 const StyledContainer = styled(Container)``
 
@@ -69,7 +68,7 @@ const Subtitle = styled.h5`
   text-align: center;
 `
 
-const FeaturesGrid = styled.div`
+const TrainGrid = styled.div`
   max-width: 670px;
   display: grid;
   grid-template-columns: 1fr 1fr;
