@@ -6,8 +6,9 @@ import { Section, Container } from "../global"
 const Train = () => (
   <Section id="Train">
     <StyledContainer>
-      <Subtitle>Train</Subtitle>
+      <Subtitle>Train Teach Earn</Subtitle>
       <SectionTitle>Get Fit Fast</SectionTitle>
+      <SectionTitle>Earn $$ Fast</SectionTitle>
       <TrainGrid>
         <FeatureItem>
           <FeatureTitle>See results sooner</FeatureTitle>
