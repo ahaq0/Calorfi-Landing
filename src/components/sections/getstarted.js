@@ -7,14 +7,18 @@ const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
       <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
+      <LinkHolder target="_blank" href={"https://docs.google.com/forms/d/e/1FAIpQLSc01pbaUFRCbEOR5Ywm8pmBBRWIzOQXuSTJzSpakymbyuA9cw/viewform?usp=sf_link"}>
+        <TryItButton>Get early access</TryItButton>
+      </LinkHolder>
       <Subtitle>No credit card required.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )
-
 export default GetStarted
 
+const LinkHolder = styled.a`
+  text-decoration: none;
+`
 const StyledSection = styled(Section)`
   background-color: ${props => props.theme.color.background.light};
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
@@ -61,6 +65,8 @@ const TryItButton = styled.button`
     margin-left: 0;
   }
 `
+
+
 
 const Subtitle = styled.span`
   ${props => props.theme.font_size.xxsmall}

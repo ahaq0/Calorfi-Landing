@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
+import Logo from "./../logo.js"
 
 import { Container } from "../../global"
 import {
@@ -16,6 +17,7 @@ import {
 } from "./style"
 
 const NAV_ITEMS = ["Train", "Teach", "Earn", ""]
+
 
 export default class Navigation extends Component {
   state = {
@@ -68,36 +70,42 @@ export default class Navigation extends Component {
     </NavListWrapper>
   )
 
+
   render() {
     const { mobileMenuOpen } = this.state
 
+  
+      
     return (
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
-          <Brand>
+          <Logo/>
+          {/* <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
                 CalorFi
               </AnchorLink>
             </Scrollspy>
-          </Brand>
-          <Mobile>
+          </Brand> */}
+          {/* <Mobile>
             <button
               onClick={this.toggleMobileMenu}
               style={{ color: "black", background: "none" }}
             >
               {this.state.mobileMenuOpen ? (
-                <X size={24} alt="close menu" />
+                <X size={18} alt="close menu" />
               ) : (
-                <Menu size={24} alt="open menu" />
+                <Menu size={18} alt="open menu" />
               )}
             </button>
-          </Mobile>
+          </Mobile> */}
 
-          <Mobile hide>{this.getNavList({})}</Mobile>
-          <ActionsContainer>
-            <button>Sign up</button>
-          </ActionsContainer>
+          {/* <Mobile hide>{this.getNavList({})}</Mobile> */}
+          {/* <ActionsContainer>
+            <button>
+              
+            </button>
+          </ActionsContainer> */}
         </StyledContainer>
         <Mobile>
           {mobileMenuOpen && (
@@ -110,3 +118,17 @@ export default class Navigation extends Component {
     )
   }
 }
+
+// const Logo = () => {
+//   const data = useStaticQuery(graphql`
+//     query {
+//       file(sourceInstanceName: { eq: "product" }, name: { eq: "logo" }) {
+//         childImageSharp {
+//           fluid(maxWidth: 1000) {
+//             ...GatsbyImageSharpFluid_tracedSVG
+//           }
+//         }
+//       }
+//     }
+//   `)
+

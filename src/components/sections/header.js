@@ -18,7 +18,12 @@ const Header = () => {
     }
   `)
 
+  
+
   const handleSubmit = event => {
+
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSc01pbaUFRCbEOR5Ywm8pmBBRWIzOQXuSTJzSpakymbyuA9cw/viewform?usp=sf_link', '_blank');
+
     event.preventDefault()
   }
 
@@ -27,7 +32,7 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>CalorFi</Subtitle>
+            <Subtitle></Subtitle>
             <h1>
               The right Personal Trainer,
               <br />
@@ -37,13 +42,13 @@ const Header = () => {
               We're building the best tool to connect personal trainers and people. Sign Up for more info
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
+              {/* <HeaderInput placeholder="Your email" /> */}
+              <HeaderButton href='https://docs.google.com/forms/d/e/1FAIpQLSc01pbaUFRCbEOR5Ywm8pmBBRWIzOQXuSTJzSpakymbyuA9cw/viewform?usp=sf_link'>Early access</HeaderButton>
             </HeaderForm>
-            <FormSubtitle>
+            {/* <FormSubtitle>
               Already have a beta account?{" "}
               <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
-            </FormSubtitle>
+            </FormSubtitle> */}
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
