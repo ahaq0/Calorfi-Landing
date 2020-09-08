@@ -18,15 +18,15 @@ const Logo = () => {
     }
   `)
   return (
-    <div>
-        {/* <Img
+    // <div>
+        /* <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Calorfi"
-        ></Img> */}
+        ></Img> */
         <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
           </ImageWrapper>
-    </div>
+    //</div>
     )
 
   }
@@ -67,6 +67,11 @@ align-self: center;
 @media (max-width: ${props => props.theme.screen.md}) {
   justify-self: center;
 }
+@media (max-width: 768px) {
+  margin:auto;
+  display:block;
+  }
+
 `
 
 // 250px works good for desktop view
