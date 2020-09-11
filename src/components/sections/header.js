@@ -39,7 +39,7 @@ const Header = () => {
               for you
             </h1>
             <h2>
-              We're building the best tool to connect personal trainers and people. Sign Up for more info
+              CalorFi is revolutionizing the fitness industry, connecting personal trainers and gyms for everyone
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               {/* <HeaderInput placeholder="Your email" /> */}
